@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Botanica. Самые лучшие букеты">
-    <meta name="description" content="Различные авторские букеты в Санкт-Петербуге для поднятия настроения родным и близким">
+    <meta name="description"
+        content="Различные авторские букеты в Санкт-Петербуге для поднятия настроения родным и близким">
     <title>botanica</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link
@@ -21,9 +22,9 @@
         <div class="header-inner">
             <div class="container">
                 <nav class="header-menu">
-                    <ul class="menu-items">
+                    <ul class="menu-items--left">
                         <li class="menu-item">
-                            <a href="" class="menu-items__text">
+                            <a href="#" class="menu-items__text">
                                 Каталог
                             </a>
                         </li>
@@ -37,12 +38,14 @@
                                 Отзывы
                             </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-items__text">
-                                <img class="header-logo" src="img/logo.svg" alt="логотип Botanica цветы в петербурге"
-                                    width="100" height="32">
-                            </a>
-                        </li>
+                    </ul>
+                    <div class="header-flexlogo">
+                        <a href="#" class="menu-items__text">
+                            <img class="header-logo" src="img/logo.svg" alt="логотип Botanica цветы в петербурге"
+                                width="100" height="32">
+                        </a>
+                    </div>
+                    <ul class="menu-items--right">
                         <li class="menu-item">
                             <a href="#" class="menu-items__text">
                                 Спецпредложения
@@ -217,9 +220,16 @@
                         о новинках и акциях первым.</p>
 
                     <div class="news-social">
-                        <img class="news-social--link" src="img/instagram.svg" alt="Instagram" width="26" height="20">
-                        <img class="news-social--link" src="img/facebook.svg" alt="facebook" width="26" height="20">
-                        <img class="news-social--link" src="img/twitter.svg" alt="twitter" width="26" height="20">
+                        <a class="news-social--link" href="#">
+                            <img class="news-social--logo" src="img/instagram.svg" alt="Instagram" width="26"
+                                height="20">
+                        </a>
+                        <a class="news-social--link" href="#">
+                            <img class="news-social--logo" src="img/facebook.svg" alt="facebook" width="26" height="20">
+                        </a>
+                        <a class="news-social--link" href="#">
+                            <img class="news-social--logo" src="img/twitter.svg" alt="twitter" width="26" height="20">
+                        </a>
                     </div>
                 </div>
                 <div class="news-gallery">
@@ -269,7 +279,8 @@
     <section class="contacts">
         <div class="contacts-inner">
             <div class="contacts-map">
-                <iframe src="https://yandex.ru/map-widget/v1/-/CCUmEOe-OD" title="Санкт-Петербург,ул. Большая Конюшенная, 19">
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUmEOe-OD"
+                    title="Санкт-Петербург,ул. Большая Конюшенная, 19">
                 </iframe>
             </div>
             <div class="contacts-info">
@@ -330,10 +341,16 @@
                     </ul>
                 </nav>
                 <div class="footer-social">
-                    <img class="news-social--link" src="img/footer-instagram.svg" alt="Instagram" width="26"
-                        height="20">
-                    <img class="news-social--link" src="img/footer-facebook.svg" alt="facebook" width="26" height="20">
-                    <img class="news-social--link" src="img/footer-twitter.svg" alt="twitter" width="26" height="20">
+                    <a class="news-social--link" href="#">
+                        <img class="news-social--logo" src="img/footer-instagram.svg" alt="Instagram" width="26"
+                            height="20">
+                    </a>
+                    <a class="news-social--link" href="#">
+                        <img class="news-social--logo" src="img/footer-facebook.svg" alt="facebook" width="26" height="20">
+                    </a>
+                    <a class="news-social--link" href="#">
+                        <img class="news-social--logo" src="img/footer-twitter.svg" alt="twitter" width="26" height="20">
+                    </a>
                 </div>
             </div>
         </div>
