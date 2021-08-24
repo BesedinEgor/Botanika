@@ -1,8 +1,7 @@
-// $(document).ready(function () {
-//     $('.gallery-carousel').slick({
-//         infinite: true,
-//         arrows: false,
-//         dots: true,
-//         // autoplay: true
-//     });
-// });
+$(document).ready(function () {
+    $('.gallery-info').slick({
+        arrows: true,
+        dots: false
+        // autoplay: true
+    });
+});

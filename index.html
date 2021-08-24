@@ -13,7 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" href="js/main.js">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -40,7 +41,7 @@
                         </li>
                     </ul>
                     <div class="header-flexlogo">
-                        <a href="#" class="menu-items__text">
+                        <a href="#" class="menu-items__textbg">
                             <img class="header-logo" src="img/logo.svg" alt="логотип Botanica цветы в петербурге"
                                 width="100" height="32">
                         </a>
@@ -110,24 +111,67 @@
 
     <section class="gallery">
         <h2 class="gallery-title">Популярные букеты</h2>
-        <div class="gallery-carousel">
-            <div class="gallery-info">
-                <dl class="gallery-flowers">
-                    <dt class="flowers-name">Букет «Нежность»</dt>
-                    <dd class="flowers-discription">Элегантный букет, который станет отличным подарком на день рождения
+        <!-- <div class="gallery-slider"> -->
+
+        <div class="gallery-info">
+            <div class="slide-1">
+                <div class="gallery-flowers">
+                    <h3 class="flowers-name">Букет «Нежность»</h3>
+                    <p class="flowers-discription">Элегантный букет, который станет отличным подарком на день
+                        рождения
                         или
-                        юбилей.</dd>
-                    <dd class="flowers-size">30 × 40 см</dd>
-                </dl>
-                <span class="flowers-price">3600 руб.</span>
-                <a href="#" class="flowers-btn btn">Заказать</a>
+                        юбилей.</p>
+                    <p class="flowers-size">30 × 40 см</p>
+                    <span class="flowers-price">3600 руб.</span>
+                    <a href="#" class="flowers-btn btn">Заказать</a>
+                </div>
+                <div class="gallery-photo">
+                    <img class="gallery-bg" src="img/gallery-bg.png" alt="букет цветов" width="387" height="438">
+                </div>
             </div>
-            <div class="gallery-photo">
-                <img class="gallery-bg" src="img/gallery-bg.png" alt="букет цветов" width="387" height="438">
+
+            <div class="slide-1">
+                <div class="gallery-flowers">
+                    <h3 class="flowers-name">Букет «Весенний»</h3>
+                    <p class="flowers-discription">Замечательный букет для самой-самой</p>
+                    <p class="flowers-size">30 × 30 см</p>
+                    <span class="flowers-price">2900 руб.</span>
+                    <a href="#" class="flowers-btn btn">Заказать</a>
+                </div>
+                <div class="gallery-photo">
+                    <img class="gallery-bg" src="img/clove.jpg" alt="букет цветов" width="387" height="438">
+                </div>
+            </div>
+
+            <div class="slide-1">
+                <div class="gallery-flowers">
+                    <h3 class="flowers-name">Букет «Мгновение»</h3>
+                    <p class="flowers-discription">букет для мимолетных встреч, который поднимет настроение любой девушке</p>
+                    <p class="flowers-size">15 × 20 см</p>
+                    <span class="flowers-price">1750 руб.</span>
+                    <a href="#" class="flowers-btn btn">Заказать</a>
+                </div>
+                <div class="gallery-photo">
+                    <img class="gallery-bg" src="img/wedding-bouquets.jpg" alt="букет цветов" width="387" height="438">
+                </div>
+            </div>
+
+            <div class="slide-1">
+                <div class="gallery-flowers">
+                    <h3 class="flowers-name">Букет «так себе радость»</h3>
+                    <p class="flowers-discription">Скрасит любой ваш вечер, если если денег хватило только на букет</p>
+                    <p class="flowers-size">15 × 20 см</p>
+                    <span class="flowers-price">450 руб.</span>
+                    <a href="#" class="flowers-btn btn">Заказать</a>
+                </div>
+                <div class="gallery-photo">
+                    <img class="gallery-bg" src="img/pions.jpg" alt="букет цветов" width="387" height="438">
+                </div>
             </div>
         </div>
-        <button class="arrow-prev" type="button" name="arrow prev"></button>
-        <button class="arrow-next" type="button" name="arrow next"></button>
+        <!-- </div> -->
+        <!-- <button class="arrow-prev" type="button" name="arrow prev"></button>
+        <button class="arrow-next" type="button" name="arrow next"></button> -->
     </section>
 
     <section class="catalog">
@@ -314,27 +358,27 @@
                 <nav class="footer-menu">
                     <ul class="footer-menu--items">
                         <li class="footer-menu--item">
-                            <a href="" class="footer-menu--items__text">
+                            <a href="" class="footer-menu--item__text">
                                 Каталог
                             </a>
                         </li>
                         <li class="footer-menu--item">
-                            <a href="#" class="footer-menu--items__text">
+                            <a href="#" class="footer-menu--item__text">
                                 Доставка и оплата
                             </a>
                         </li>
                         <li class="footer-menu--item">
-                            <a href="#" class="footer-menu--items__text">
+                            <a href="#" class="footer-menu--item__text">
                                 Отзывы
                             </a>
                         </li>
                         <li class="footer-menu--item">
-                            <a href="#" class="footer-menu--items__text">
+                            <a href="#" class="footer-menu--item__text">
                                 Спецпредложения
                             </a>
                         </li>
                         <li class="footer-menu--item">
-                            <a href="#" class="footer-menu--items__text">
+                            <a href="#" class="footer-menu--item__text">
                                 Контакты
                             </a>
                         </li>
@@ -346,23 +390,22 @@
                             height="20">
                     </a>
                     <a class="news-social--link" href="#">
-                        <img class="news-social--logo" src="img/footer-facebook.svg" alt="facebook" width="26" height="20">
+                        <img class="news-social--logo" src="img/footer-facebook.svg" alt="facebook" width="26"
+                            height="20">
                     </a>
                     <a class="news-social--link" href="#">
-                        <img class="news-social--logo" src="img/footer-twitter.svg" alt="twitter" width="26" height="20">
+                        <img class="news-social--logo" src="img/footer-twitter.svg" alt="twitter" width="26"
+                            height="20">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
 
-
-
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
