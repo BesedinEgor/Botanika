@@ -18,8 +18,11 @@ body {
     line-height: 19.5px;
     font-size: 16px;
     color: #ae7c78;
+    padding-top: 24px;
 }
-
+.header-main{
+    margin-bottom: 80px;
+}
 .container {
     max-width: 1220px;
     padding: 0 10px;
@@ -28,7 +31,7 @@ body {
 .header-inner {
     border-top: 1px solid #ae7c78;
     border-bottom: 1px solid #ae7c78;
-    margin-top: 26px;
+    
 }
 .header-menu {
     display: flex;
@@ -71,7 +74,7 @@ body {
     width: 100%;
 }
 .flowers-catalog {
-    padding-top: 80px;
+    margin-bottom: 50px;
 }
 .flowers-inner {
     display: flex;
@@ -122,7 +125,7 @@ body {
 }
 
 .about {
-    padding-top: 50px;
+    margin-bottom: 80px;
 }
 .about-items {
     display: flex;
@@ -186,7 +189,7 @@ body {
     position: relative;
     width: 800px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-bottom: 100px;
 }
 .gallery-title {
     font-family: "Playfair Display", serif;
@@ -208,19 +211,19 @@ body {
 .gallery-flowers {
     max-width: 387px;
 }
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
     display: flex;
     justify-content: space-between;
 }
-.slick-dots{
+.slick-dots {
     display: flex;
     justify-content: center;
     margin-top: 24px;
 }
-.slider{
+.slider {
     position: relative;
 }
-.slick-arrow{
+.slick-arrow {
     margin-top: 24px;
     border: none;
     background: none;
@@ -230,20 +233,35 @@ body {
     width: 51px;
     height: 16px;
 }
-.slick-arrow.slick-prev{
+.slick-arrow.slick-prev {
     position: absolute;
-    left: 45%;
+    right: 50%;
+    margin-right: 10px;
     background-image: url(../img/arrow-prev.svg);
     z-index: 2;
     bottom: -40px;
+    transition: all .3s;
 }
-.slick-arrow.slick-next{
+.slick-arrow.slick-prev:hover{
+    transform: translateX(-10px);
+    transition: all .3s;
+}
+.slick-arrow.slick-next {
     position: absolute;
-    left: 55%;
+    left: 50%; 
+    margin-left: 10px;
     background-image: url(../img/arrow-next.svg);
     z-index: 2;
+    transition: all .3s;
 }
-.gallery-bg{
+.slick-arrow.slick-next:hover{
+    transform: translateX(10px);
+    transition: all .3s;
+}
+.slick-slider button {
+    cursor: pointer;
+}
+.gallery-bg {
     border-radius: 10px;
 }
 .flowers-name {
@@ -263,17 +281,8 @@ body {
 .btn {
     padding: 30px 105px;
 }
-.arrow-prev,
-.arrow-next {
-    position: relative;
-    width: 50px;
-    height: 16px;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
 .catalog {
-    padding: 100px 0;
+    margin-bottom: 80px;
 }
 .catalog-section {
     display: flex;
@@ -321,7 +330,9 @@ body {
 .flowers-picture {
     border-radius: 10px;
 }
-
+.sale{
+    margin-bottom: 80px;
+}
 .sale-container {
     background-color: #ae7c78;
     display: flex;
@@ -348,7 +359,7 @@ body {
 }
 
 .steps {
-    padding-top: 80px;
+    margin-bottom: 80px;
 }
 .steps-items {
     display: flex;
@@ -388,7 +399,7 @@ body {
 }
 
 .news {
-    padding-top: 80px;
+    margin-bottom: 80px;
 }
 .news-inner {
     display: flex;
@@ -426,8 +437,7 @@ body {
 }
 
 .reviews {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 }
 .reviews-inner {
     border: 1px solid #ae7c78;
@@ -474,7 +484,7 @@ iframe {
     position: absolute;
     top: 52px;
     left: 222px;
-    width: 386px;
+    max-width: 386px;
     height: 520px;
     background-color: #f7fafc;
     box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
@@ -528,7 +538,7 @@ iframe {
     margin-right: 68px;
     padding: 22px 0;
 }
-.footer-menu--item__text{
+.footer-menu--item__text {
     color: #fff;
 }
 .footer-menu--item__text::before {
